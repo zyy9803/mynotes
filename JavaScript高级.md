@@ -611,7 +611,7 @@ instance.sayHi() // => hi!
 
 #### 属性成员的搜索原则：原型链
 
-<img src="https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210252211794.png " alt="image-20210318161351474" style="zoom: 50%;" />
+<img src="https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210252211794.png " alt="https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210252211794.png" style="zoom: 50%;" />
 
 了解了 **构造函数-实例-原型对象** 三者之间的关系后，接下来我们来解释一下为什么实例对象可以访问原型对象中的成员。
 

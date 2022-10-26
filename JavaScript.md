@@ -918,7 +918,7 @@ console.log(box.scrollHeight)//元素内容真实的高度，内容不超出盒�
 
 #### 节点
 
-![image-20211124194637222](media/202210252206418.png) 
+![image-20221026112043169](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261121734.png)
 
 **子节点：childNodes，firstChild，lastChild**
 
@@ -938,7 +938,7 @@ parentNode、previousSibling、nextSibling
 
 对于很多任务来说，我们并不想要文本节点或注释节点。我们希望操纵的是代表标签的和形成页面结构的元素节点。
 
-![image-20211124200014386](media/202210252206350.png) 
+![image-20221026112340937](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261124233.png)
 
 这些链接和我们在上面提到过的类似，只是在词中间加了 `Element`：
 
@@ -983,7 +983,7 @@ parentNode、previousSibling、nextSibling
 
 ### 节点类
 
-![image-20211124200928869](media/202210252207288.png) 
+![image-20221026112200452](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261122640.png)
 
 - [EventTarget](https://dom.spec.whatwg.org/#eventtarget) — 是根的“抽象（abstract）”类。该类的对象从未被创建。它作为一个基础，以便让所有 DOM 节点都支持所谓的“事件（event）”，我们会在之后学习它。
 - [Node](http://dom.spec.whatwg.org/#interface-node) — 也是一个“抽象”类，充当 DOM 节点的基础。它提供了树的核心功能：`parentNode`，`nextSibling`，`childNodes` 等（它们都是 getter）。`Node` 类的对象从未被创建。但是有一些继承自它的具体的节点类，例如：文本节点的 `Text`，元素节点的 `Element`，以及更多异域（exotic）类，例如注释节点的 `Comment`。
@@ -1196,7 +1196,7 @@ tagName 和 nodeName 之间有什么不同吗？
 - `node.after(...nodes or strings)` —— 在 `node` **后面** 插入节点或字符串，
 - `node.replaceWith(...nodes or strings)` —— 将 `node` 替换为给定的节点或字符串。
 
-![image-20211124203124542](media/202210252207820.png) 
+![image-20221026112458107](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261124381.png)
 
 但是如果插入的是文本，则会被当作文字像 `<`、`>` 这样的符号都会被作转义处理来保证正确显示。
 
@@ -1228,7 +1228,7 @@ tagName 和 nodeName 之间有什么不同吗？
 
 第二个参数是 HTML 字符串，该字符串会被“作为 HTML” 插入。
 
-![image-20211124203430244](media/202210252207822.png) 
+![image-20221026112517881](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261125213.png)
 
 这个方法有两个兄弟：
 
@@ -1356,7 +1356,7 @@ getComputedStyle(element, [pseudo])
 
 ### 元素大小和滚动
 
-![image-20211124232300038](media/202210252207804.png) 
+![image-20221026112541056](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261125957.png)
 
 
 
@@ -1420,7 +1420,7 @@ alert('Current scroll from the left: ' + window.pageXOffset);
 
 在下图中，我们在文档中取一点，并演示了它滚动之前（左）和之后（右）的坐标：
 
-![image-20211124233635414](media/202210252207699.png) 
+![image-20221026112610459](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261126208.png)
 
 #### 元素坐标
 
@@ -1634,7 +1634,7 @@ element.removeEventListener(event, handler[, options]);
 
 #### 冒泡
 
-![image-20211125193721792](media/202210252207948.png) 
+![image-20221026112632583](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261126799.png)
 
 **引发事件的那个嵌套层级最深的元素被称为目标元素,可以通过 `event.target` 访问。**
 
@@ -1666,7 +1666,7 @@ element.removeEventListener(event, handler[, options]);
 2. 目标阶段（Target phase）—— 事件到达目标元素。
 3. 冒泡阶段（Bubbling phase）—— 事件从元素上开始冒泡。
 
-![image-20211125193826219](media/202210252207496.png) 
+![image-20221026112650132](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261126631.png)
 
 为了在捕获阶段捕获事件，我们需要将处理程序的 `capture` 选项设置为 `true`：
 
@@ -2043,7 +2043,7 @@ Before...
 
 #### mouseover / out, relatedTarget
 
-![image-20211127163717974](media/202210252208003.png) 
+![image-20221026112708785](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261127987.png)
 
 它们具有 `relatedTarget` 属性。此属性是对 `target` 的补充。当鼠标从一个元素离开并去往另一个元素时，其中一个元素就变成了 `target`，另一个就变成了 `relatedTarget`。
 
@@ -2069,7 +2069,7 @@ Before...
 
 如果我们在 `#parent` 上，然后将鼠标指针更深入地移入 `#child`，但是在 `#parent` 上会得到 `mouseout`
 
-![image-20211127165304319](media/202210252208290.png) 
+![image-20221026112727063](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261127092.png)
 
 **根据浏览器的逻辑，鼠标指针随时可能位于单个元素上 —— 嵌套最多的那个元素（z-index 最大的那个）。**
 
@@ -3075,7 +3075,7 @@ alert( rabbit.eats ); // true
 
 设置 `Rabbit.prototype = animal` 的字面意思是：当创建了一个 `new Rabbit` 时，把它的 `[[Prototype]]` 赋值为 `animal`
 
-![image-20220113103911559](media/image-20220113103911559.png) 
+![image-20221026112744956](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261128250.png)
 
 每个函数都有 `prototype` 属性，默认的 `prototype` 是一个只有属性 `constructor` 的对象，并且 `constructor` 属性可以通过 `[[Prototype]]` 给所有 rabbits 使用，还可以使用 `constructor` 属性来创建一个新对象，该对象使用与现有对象相同的构造器：
 
@@ -3090,7 +3090,7 @@ let rabbit = new Rabbit("White Rabbit");
 let rabbit2 = new rabbit.constructor("Black Rabbit");
 ```
 
-![image-20220113104245868](JavaScript.assets/image-20220113104245868.png) 
+![image-20221026112801233](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261128817.png)
 
 ## 类
 
@@ -3115,7 +3115,7 @@ rabbit.hide(); // White Rabbit hides!
 
 在内部，关键字 `extends` 使用了很好的旧的原型机制进行工作。它将 `Rabbit.prototype.[[Prototype]]` 设置为 `Animal.prototype`。所以，如果在 `Rabbit.prototype` 中找不到一个方法，JavaScript 就会从 `Animal.prototype` 中获取该方法。
 
-![image-20220113153120309](JavaScript.assets/image-20220113153120309.png) 
+![image-20221026112827310](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261128314.png)
 
 #### 重写方法
 

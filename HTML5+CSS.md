@@ -144,13 +144,13 @@
 
 ### 优先级
 
-![image-20210310113033902](HTML5+CSS.assets\image-20210310113033902.png)
+![image-20221026111759205](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261117290.png)
 
 
 
 ## 盒子模型
 
-![image-20210310162821093](HTML5+CSS.assets\image-20210310162821093.png)
+![image-20221026111818371](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261118482.png)
 
 <strong style="color:red;">盒子指定的宽高是内容的宽高</strong>
 
@@ -201,7 +201,7 @@ padding不会撑开盒子的情况：盒子本身没有指定宽度/高度，pad
 2. 父元素定义上内边距
 3. 为父元素添加 `overflow: hidden`
 
-<img src="HTML5+CSS.assets\image-20210310194233964.png" alt="image-20210310194233964" style="zoom:50%;" />
+![image-20221026111727961](https://candy-picture.oss-cn-hangzhou.aliyuncs.com/img/202210261117148.png)
 
 ### 清除内外边距
 
