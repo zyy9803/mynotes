@@ -1,11 +1,6 @@
----
-学习目标:
-  - 掌握API和Web API的概念
-  - 掌握常见浏览器提供的API的调用方式
-  - 能通过Web API开发常见的页面交互功能
-  - 能够利用搜索引擎解决问题
-typora-copy-images-to: media
----
+[TOC]
+
+
 
 # Web API
 

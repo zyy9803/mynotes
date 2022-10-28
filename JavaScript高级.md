@@ -1,10 +1,6 @@
----
- 学习目标:
-  - 理解面向对象开发思想
-  - 掌握 JavaScript 面向对象开发相关模式
-  
-typora-copy-images-to media
----
+[TOC]
+
+
 
 # JavaScript 高级
 

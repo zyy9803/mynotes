@@ -1,3 +1,7 @@
+[TOC]
+
+
+
 # Git简介
 
 版本控制工具应该具备的功能：
@@ -248,10 +252,14 @@ Git 在进行分支管理创建新分支时，并没有将所有文件复制一�
 
 * `git remote -v` 查看远程地址别名
 * `git remote add origin [远程地址别名] [远程地址]`
+  * `git remote add origin https://github.com/zyy9803/mynotes.git`
+
 
 推送操作：
 
-* `git push [远程地址别名] [分支名字]`
+* `git push [远程地址别名] [分支名字]` 注意 github 现在默认分支名为 main，分支名不同不能推送，可以先修改分支名
+  * `git push origin master`
+
 
 克隆操作：
 
